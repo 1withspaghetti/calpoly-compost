@@ -15,7 +15,7 @@
 	let menuItems: MenuItem[] = [
 		{ name: 'Solutions', href: resolve('/solutions') },
 		{ name: 'Sorting Tool', href: resolve('/tool') },
-		{ name: 'About Us', href: resolve('/about') },
+		{ name: 'About Us', href: resolve('/about') }
 	];
 
 	let menuState = $state(false);
@@ -93,7 +93,9 @@
 						</ul>
 					</div>
 					<div class="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-						<Button variant="outline" size="sm" href={resolve('/solutions')}>What <i>you</i> can do</Button>
+						<Button variant="outline" size="sm" href={resolve('/solutions')}
+							>What <i>you</i> can do</Button
+						>
 					</div>
 				</div>
 			</div>

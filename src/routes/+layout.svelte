@@ -16,4 +16,4 @@
 	});
 </script>
 
-{@render children()} 
+{@render children()}

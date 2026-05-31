@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	export const GLOBAL_NAME = "Cal Poly Compost"
+	export const GLOBAL_NAME = 'Cal Poly Compost';
 </script>
 
 <script lang="ts">
@@ -27,9 +27,9 @@
 
 <svelte:head>
 	{#if title}
-		<title>{title}{noTitleSuffix ? '' : ' | '+GLOBAL_NAME}</title>
-		<meta property="og:title" content="{title}{noTitleSuffix ? '' : ' | '+GLOBAL_NAME}" />
-		<meta name="twitter:title" content="{title}{noTitleSuffix ? '' : ' | '+GLOBAL_NAME}" />
+		<title>{title}{noTitleSuffix ? '' : ' | ' + GLOBAL_NAME}</title>
+		<meta property="og:title" content="{title}{noTitleSuffix ? '' : ' | ' + GLOBAL_NAME}" />
+		<meta name="twitter:title" content="{title}{noTitleSuffix ? '' : ' | ' + GLOBAL_NAME}" />
 	{/if}
 
 	{#if description}
