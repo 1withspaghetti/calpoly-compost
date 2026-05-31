@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Header from '$lib/components/Header.svelte';
 	import Meta from '$lib/components/Meta.svelte';
+	import { CornerLeftDown, CornerRightUp } from '@lucide/svelte';
 </script>
 
 <Meta title="About" />
@@ -20,7 +21,14 @@
             </h1>
         </div>
     </section>
-    <section class="container w-full px-8 py-16">
-        TODO
+    <section class="max-w-4xl w-full px-8 py-16">
+        <h2 class="text-4xl font-extrabold mb-8">The Mission:</h2>
+        <div class="relative mx-8 px-16 py-8">
+            <p class="text-2xl">
+                To <b class="text-3xl">educate</b> and <b class="text-3xl">advocate</b> for effective waste reduction via <b class="text-3xl">composting opportunities</b> on the Cal Poly campus
+            </p>
+            <CornerLeftDown strokeWidth={3} class="size-16 absolute top-0 left-0" />
+            <CornerRightUp strokeWidth={3} class="size-16 absolute right-0 bottom-0" />
+        </div>
     </section>
 </main>
