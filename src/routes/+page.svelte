@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { inViewAnimate } from '$lib/components/actions/inView';
 	import Header from '$lib/components/Header.svelte';
 	import Meta, { GLOBAL_NAME } from '$lib/components/Meta.svelte';
 </script>
@@ -16,10 +17,34 @@
 		/>
 		<div class="relative bg-black/40 p-8 py-16 text-center text-white md:py-32">
 			<h1 class="flex flex-col items-center">
-				<span class="text-xl font-bold md:text-3xl">Cal Poly has a</span>
-				<span class="mb-2 scale-x-125 text-4xl font-extrabold md:text-6xl">Compost Problem...</span>
+				<div class="text-xl font-bold md:text-3xl">Cal Poly has a</div>
+				<div class="flex md:scale-x-125 text-4xl font-extrabold md:text-6xl">
+					<div
+						use:inViewAnimate={{
+							keyframes: { translateX: [-50, 0], opacity: [0, 1] },
+							options: { duration: 0.3, ease: 'easeOut' }
+						}}
+						style="opacity: 0;"
+					>
+						Compost&nbsp;
+					</div>
+					<div
+						use:inViewAnimate={{
+							keyframes: { translateX: [50, 0], opacity: [0, 1] },
+							options: { delay: 0.3, duration: 0.3, ease: 'easeOut' }
+						}}
+						style="opacity: 0;"
+					>
+						Problem...
+					</div>
+				</div>
 			</h1>
 		</div>
 	</section>
-	<section class="container w-full px-8 py-16">TODO</section>
+	<section class="w-full max-w-4xl px-8 py-16">
+		<div>
+			<h2 class="text-3xl font-extrabold">1: Where are all those compost bins?</h2>
+			<p>TODO</p>
+		</div>
+	</section>
 </main>
