@@ -2,23 +2,24 @@
 	import { inViewAnimate } from '$lib/components/actions/inView';
 	import Header from '$lib/components/Header.svelte';
 	import Meta, { GLOBAL_NAME } from '$lib/components/Meta.svelte';
+	import { Earth, PiggyBank, Trash2 } from '@lucide/svelte';
 </script>
 
 <Meta noTitleSuffix title={GLOBAL_NAME} />
 
 <Header />
 <main class="flex flex-col items-center overflow-hidden pt-20 pb-32">
-	<section class="max-w-8xl relative w-full">
+	<section class="max-w-8xl relative mb-8 w-full">
 		<enhanced:img
 			class="absolute top-0 left-0 h-full w-full object-cover object-center"
 			src="$lib/assets/imgs/student_composting.jpg?w=1500;1024;512"
 			alt="student throwing a napkin into a compost bin"
 			sizes="(max-width: 1500px) 100vw"
 		/>
-		<div class="relative bg-black/40 p-8 py-16 text-center text-white md:py-32">
+		<div class="relative bg-black/40 p-8 py-16 text-center text-white md:py-48">
 			<h1 class="flex flex-col items-center">
 				<div class="text-xl font-bold md:text-3xl">Cal Poly has a</div>
-				<div class="flex md:scale-x-125 text-4xl font-extrabold md:text-6xl">
+				<div class="flex text-4xl font-extrabold md:scale-x-125 md:text-6xl">
 					<div
 						use:inViewAnimate={{
 							keyframes: { translateX: [-50, 0], opacity: [0, 1] },
@@ -41,10 +42,104 @@
 			</h1>
 		</div>
 	</section>
-	<section class="w-full max-w-4xl px-8 py-16">
-		<div>
-			<h2 class="text-3xl font-extrabold">1: Where are all those compost bins?</h2>
-			<p>TODO</p>
+	<section class="prose prose-lg w-full max-w-4xl p-8">
+		<h2>What's so special about compost?</h2>
+		<div class="flex flex-col items-center gap-4 md:flex-row">
+			<div use:inViewAnimate={{ keyframes: { opacity: [0, 1] } }} style="opacity: 0;">
+				<Trash2 class="mx-16 size-16 shrink-0" />
+			</div>
+			<p class="col-span-2">
+				The ability to compost <a
+					href="https://extension.illinois.edu/blogs/everyday-environment/2024-10-17-reduce-methane-generation-composting"
+					rel="external"
+					target="_blank">diverts</a
+				>
+				waste away from landfills, where the organics rot and release large amounts of methane into the
+				atmosphere; a greenhouse gas
+				<a href="https://www.epa.gov/gmi/importance-methane" rel="external" target="_blank"
+					>28 times</a
+				> as potent as Co2.
+			</p>
+		</div>
+		<div class="flex flex-col items-center gap-4 md:flex-row-reverse">
+			<div
+				use:inViewAnimate={{
+					keyframes: { opacity: [0, 1] },
+					options: { delay: 0.3 }
+				}}
+				style="opacity: 0;"
+			>
+				<PiggyBank class="mx-16 size-16 shrink-0" />
+			</div>
+			<p class="col-span-2">
+				When used correctly, composting can <a
+					href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9575438/"
+					rel="external"
+					target="_blank">often be cheaper</a
+				> than sending waste to landfills, both for Cal Poly and hence the students.
+			</p>
+		</div>
+		<div class="flex flex-col items-center gap-4 md:flex-row">
+			<div
+				use:inViewAnimate={{
+					keyframes: { opacity: [0, 1] },
+					options: { delay: 0.6 }
+				}}
+				style="opacity: 0;"
+			>
+				<Earth class="mx-16 size-16 shrink-0" />
+			</div>
+			<p class="col-span-2">
+				And among many more benefits, compost <a
+					href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9575438/"
+					rel="external"
+					target="_blank">helps</a
+				> to save the diminishing topsoil health in the United States caused by large scale farming practices.
+			</p>
+		</div>
+	</section>
+	<section class="relative prose prose-lg w-full max-w-4xl p-8">
+		<h2 class="pr-20">So, where are the compost bins?</h2>
+		<div class="absolute top-8 right-4 flex text-6xl font-extrabold select-none md:right-8">
+			<div
+				style="transform: rotate(-20deg); opacity: 0;"
+				use:inViewAnimate={{ keyframes: { opacity: [0, 1] }, options: { delay: 0 } }}
+			>
+				?
+			</div>
+			<div
+				style="transform: rotate(5deg) translateY(-8px); opacity: 0;"
+				use:inViewAnimate={{ keyframes: { opacity: [0, 1] }, options: { delay: 0.3 } }}
+			>
+				?
+			</div>
+			<div
+				style="transform: rotate(30deg) translateY(12px); opacity: 0;"
+				use:inViewAnimate={{ keyframes: { opacity: [0, 1] }, options: { delay: 0.6 } }}
+			>
+				?
+			</div>
+		</div>
+		<div class="flex flex-wrap">
+			<div>
+				<p>
+					Ever had a meal at Campus Market? What about food trucks? You may have noticed that,
+					although some of your waste can certainly be composted, there's nowhere to put it! The
+					trash bins in the area are overflowing with content being sent to the landfill.
+				</p>
+				<p>
+					Cal Poly does contain compost bins in its two major dining areas, 1901 and Vista Grande,
+					but those are far from the only locations students enjoy their food.
+				</p>
+				<p>
+					Even more surprisingly, continuing students in PCV or Cerro Visto <a
+						href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=1"
+						rel="external"
+						target="_blank">don’t have access</a
+					> to compost either! All those eggshells, banana peels, and way more are forced straight into
+					the garbage.
+				</p>
+			</div>
 		</div>
 	</section>
 </main>

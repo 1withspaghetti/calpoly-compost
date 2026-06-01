@@ -20,7 +20,7 @@
 
 	let menuState = $state(false);
 	let isScrolled = $derived.by(() => {
-		if (scrollY.current !== undefined && scrollY.current > 10) {
+		if (scrollY.current !== undefined && scrollY.current > 20) {
 			return true;
 		}
 		return false;

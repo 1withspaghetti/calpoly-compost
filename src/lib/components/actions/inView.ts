@@ -27,9 +27,9 @@ export const inViewAnimate: Action<
 	const destroy = motionInView(
 		node,
 		(node) => {
-            console.log("In view")
+			console.log('In view');
 			const controls = animate(node, keyframes, options);
-            controls.finished.then(() => console.log("Finished"))
+			controls.finished.then(() => console.log('Finished'));
 		},
 		inViewOptions
 	);

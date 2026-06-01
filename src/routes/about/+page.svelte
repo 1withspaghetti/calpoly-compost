@@ -8,7 +8,7 @@
 
 <Header />
 <main class="flex flex-col items-center overflow-hidden pt-20 pb-32">
-	<section class="max-w-8xl relative w-full">
+	<section class="max-w-8xl relative mb-8 w-full">
 		<enhanced:img
 			class="absolute top-0 left-0 h-full w-full object-cover object-center"
 			src="$lib/assets/imgs/about-calpoly-aerial.jpg?w=1600;1024;512"
@@ -21,12 +21,12 @@
 			</h1>
 		</div>
 	</section>
-	<section class="w-full max-w-4xl px-8 py-16">
-		<h2 class="mb-8 text-4xl font-extrabold">The Mission:</h2>
-		<div class="relative mx-8 px-16 py-8">
-			<p class="text-2xl">
-				To <b class="text-3xl">educate</b> and <b class="text-3xl">advocate</b> for effective waste
-				reduction via <b class="text-3xl">composting opportunities</b> on the Cal Poly campus
+	<section class="prose prose-lg w-full max-w-4xl p-8">
+		<h2>The Mission:</h2>
+		<div class="relative px-16 py-4 md:mx-8">
+			<p class="text-xl">
+				To <b class="text-2xl">educate</b> and <b class="text-2xl">advocate</b> for effective waste
+				reduction via <b class="text-2xl">composting opportunities</b> on the Cal Poly campus
 			</p>
 			<CornerLeftDown strokeWidth={3} class="absolute top-0 left-0 size-16" />
 			<CornerRightUp strokeWidth={3} class="absolute right-0 bottom-0 size-16" />

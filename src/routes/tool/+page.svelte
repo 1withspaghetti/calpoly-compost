@@ -7,7 +7,7 @@
 
 <Header />
 <main class="flex flex-col items-center overflow-hidden pt-20 pb-32">
-	<section class="max-w-8xl relative w-full">
+	<section class="max-w-8xl relative mb-8 w-full">
 		<enhanced:img
 			class="absolute top-0 left-0 h-full w-full object-cover object-center"
 			src="$lib/assets/imgs/zerowaste.jpg?w=1920;1440;960"
@@ -21,5 +21,5 @@
 			</h1>
 		</div>
 	</section>
-	<section class="container w-full px-8 py-16">TODO</section>
+	<section class="container w-full p-8">TODO</section>
 </main>
