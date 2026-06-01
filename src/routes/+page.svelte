@@ -3,6 +3,8 @@
 	import Header from '$lib/components/Header.svelte';
 	import Meta, { GLOBAL_NAME } from '$lib/components/Meta.svelte';
 	import { Earth, PiggyBank, Trash2 } from '@lucide/svelte';
+	import lqip_hero from '$lib/assets/imgs/student_composting.jpg?lqip';
+	import { Button } from '$lib/components/ui/button';
 </script>
 
 <Meta noTitleSuffix title={GLOBAL_NAME} />
@@ -13,8 +15,12 @@
 		<enhanced:img
 			class="absolute top-0 left-0 h-full w-full object-cover object-center"
 			src="$lib/assets/imgs/student_composting.jpg?w=1500;1024;512"
+			loading="eager"
 			alt="student throwing a napkin into a compost bin"
 			sizes="(max-width: 1500px) 100vw"
+			style:background-image={`url("${lqip_hero.lqip}")`}
+			style:background-size="cover"
+			style:font-size="0"
 		/>
 		<div class="relative bg-black/40 p-8 py-16 text-center text-white md:py-48">
 			<h1 class="flex flex-col items-center">
@@ -140,6 +146,47 @@
 					the garbage.
 				</p>
 			</div>
+		</div>
+	</section>
+	<section class="prose prose-lg w-full max-w-4xl p-8">
+		<h2>Where does the existing compost go?</h2>
+		<div class="flex flex-col gap-8 md:flex-row-reverse">
+			<enhanced:img
+				src="$lib/assets/imgs/compostcontamination.jpg?w=615;512;256"
+				alt="a pile of compost with plastic mixed in"
+				class="not-prose max-w-64 shrink-0"
+				use:inViewAnimate={{ keyframes: { opacity: [0, 1] } }}
+				style="opacity: 0;"
+			/>
+			<div class="w-fit">
+				<p>
+					Over a decade ago, Cal Poly <a
+						href="https://mustangnews.net/compostingv2/"
+						rel="external"
+						target="_blank">stopped sending</a
+					>
+					its post-consumer waste to facilities. That means, even if there are more compost bins, they
+					still go <b>straight to landfill</b> regardless.
+				</p>
+				<p>
+					The main issue? <b>Contamination</b>.
+				</p>
+				<p>
+					Contamination plagues all post-consumer composting programs; it's the same reason Cal Poly <a
+						href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=2"
+						rel="external"
+						target="_blank">removed it’s PCV compost dumpster</a
+					> in 2023. The plastics and other waste placed into the wrong bin prevented the rest of it from
+					being properly handled, and increased cost for everybody.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="w-full max-w-4xl p-8">
+		<div class="flex w-full items-center gap-4">
+			<div class="h-0 w-full border"></div>
+			<Button href="/solutions" size="xl">What <i>you</i> can do</Button>
+			<div class="h-0 w-full border"></div>
 		</div>
 	</section>
 </main>

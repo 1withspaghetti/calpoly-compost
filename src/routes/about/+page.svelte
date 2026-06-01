@@ -2,6 +2,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import { CornerLeftDown, CornerRightUp } from '@lucide/svelte';
+	import lqip_hero from '$lib/assets/imgs/about-calpoly-aerial.jpg?lqip';
 </script>
 
 <Meta title="About" />
@@ -12,8 +13,12 @@
 		<enhanced:img
 			class="absolute top-0 left-0 h-full w-full object-cover object-center"
 			src="$lib/assets/imgs/about-calpoly-aerial.jpg?w=1600;1024;512"
+			loading="eager"
 			alt="ariel view of calpoly campus"
-			sizes="(max-width: 1500px) 100vw"
+			sizes="(max-width: 1600px) 100vw"
+			style:background-image={`url("${lqip_hero.lqip}")`}
+			style:background-size="cover"
+			style:font-size="0"
 		/>
 		<div class="relative bg-black/40 p-8 py-16 text-center text-white md:py-32">
 			<h1 class="flex flex-col items-center">
@@ -24,7 +29,7 @@
 	<section class="prose prose-lg w-full max-w-4xl p-8">
 		<h2>The Mission:</h2>
 		<div class="relative px-16 py-4 md:mx-8">
-			<p class="text-xl">
+			<p class="text-center text-xl">
 				To <b class="text-2xl">educate</b> and <b class="text-2xl">advocate</b> for effective waste
 				reduction via <b class="text-2xl">composting opportunities</b> on the Cal Poly campus
 			</p>
