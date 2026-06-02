@@ -5,6 +5,7 @@
 	import { Earth, PiggyBank, Trash2 } from '@lucide/svelte';
 	import lqip_hero from '$lib/assets/imgs/student_composting.jpg?lqip';
 	import { Button } from '$lib/components/ui/button';
+	import WasteStreamVisualization from './WasteStreamVisualization.svelte';
 </script>
 
 <Meta noTitleSuffix title={GLOBAL_NAME} />
@@ -60,8 +61,8 @@
 					rel="external"
 					target="_blank">diverts</a
 				>
-				waste away from landfills, where the organics rot and release large amounts of methane into the
-				atmosphere; a greenhouse gas
+				waste away from landfills, where the organics rot and release large amounts of methane
+				into the atmosphere; a greenhouse gas
 				<a href="https://www.epa.gov/gmi/importance-methane" rel="external" target="_blank"
 					>28 times</a
 				> as potent as Co2.
@@ -100,7 +101,8 @@
 					href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9575438/"
 					rel="external"
 					target="_blank">helps</a
-				> to save the diminishing topsoil health in the United States caused by large scale farming practices.
+				> to save the diminishing topsoil health in the United States caused by large scale farming
+				practices.
 			</p>
 		</div>
 	</section>
@@ -129,24 +131,27 @@
 		<div class="flex flex-wrap">
 			<div>
 				<p>
-					Ever had a meal at Campus Market? What about food trucks? You may have noticed that,
-					although some of your waste can certainly be composted, there's nowhere to put it! The
-					trash bins in the area are overflowing with content being sent to the landfill.
+					Ever had a meal at Campus Market? What about food trucks? You may have noticed
+					that, although some of your waste can certainly be composted, there's nowhere to
+					put it! The trash bins in the area are overflowing with content being sent to
+					the landfill.
 				</p>
 				<p>
-					Cal Poly does contain compost bins in its two major dining areas, 1901 and Vista Grande,
-					but those are far from the only locations students enjoy their food.
+					Cal Poly does contain compost bins in its two major dining areas, 1901 and Vista
+					Grande, but those are far from the only locations students enjoy their food.
 				</p>
 				<p>
 					Even more surprisingly, continuing students in PCV or Cerro Visto <a
 						href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=1"
 						rel="external"
 						target="_blank">don’t have access</a
-					> to compost either! All those eggshells, banana peels, and way more are forced straight into
-					the garbage.
+					> to compost either! All those eggshells, banana peels, and way more are forced straight
+					into the garbage.
 				</p>
 			</div>
 		</div>
+		<h4 class="mb-0">Cal Poly fails to live up to California's relative waste disposal:</h4>
+		<WasteStreamVisualization />
 	</section>
 	<section class="prose prose-lg w-full max-w-4xl p-8">
 		<h2>Where does the existing compost go?</h2>
@@ -165,28 +170,41 @@
 						rel="external"
 						target="_blank">stopped sending</a
 					>
-					its post-consumer waste to facilities. That means, even if there are more compost bins, they
-					still go <b>straight to landfill</b> regardless.
+					its post-consumer waste to facilities. That means, even if there are more compost
+					bins, they still go <b>straight to landfill</b> regardless.
 				</p>
 				<p>
 					The main issue? <b>Contamination</b>.
 				</p>
 				<p>
-					Contamination plagues all post-consumer composting programs; it's the same reason Cal Poly <a
+					Contamination plagues all post-consumer composting programs; it's the same
+					reason Cal Poly <a
 						href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=2"
 						rel="external"
 						target="_blank">removed it’s PCV compost dumpster</a
-					> in 2023. The plastics and other waste placed into the wrong bin prevented the rest of it from
-					being properly handled, and increased cost for everybody.
+					> in 2023. The plastics and other waste placed into the wrong bin prevented the rest
+					of it from being properly handled, and increased cost for everybody.
 				</p>
 			</div>
 		</div>
 	</section>
 	<section class="w-full max-w-4xl p-8">
-		<div class="flex w-full items-center gap-4">
-			<div class="h-0 w-full border"></div>
+		<div class="flex w-full items-center gap-4 overflow-hidden">
+			<div
+				use:inViewAnimate={{
+					keyframes: { translateX: ['-100%', 0] },
+					options: { delay: 0.3, duration: 2, ease: [0, 0.55, 0.45, 1] }
+				}}
+				class="h-0 w-full border"
+			></div>
 			<Button href="/solutions" size="xl">What <i>you</i> can do</Button>
-			<div class="h-0 w-full border"></div>
+			<div
+				use:inViewAnimate={{
+					keyframes: { translateX: ['100%', 0] },
+					options: { delay: 0.3, duration: 2, ease: [0, 0.55, 0.45, 1] }
+				}}
+				class="h-0 w-full border"
+			></div>
 		</div>
 	</section>
 </main>

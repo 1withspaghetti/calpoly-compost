@@ -22,7 +22,9 @@
 		/>
 		<div class="relative bg-black/40 p-8 py-16 text-center text-white md:py-32">
 			<h1 class="flex flex-col items-center">
-				<span class="mb-2 scale-x-125 text-4xl font-extrabold md:text-6xl">Sorting Tool</span>
+				<span class="mb-2 scale-x-125 text-4xl font-extrabold md:text-6xl"
+					>Sorting Tool</span
+				>
 			</h1>
 		</div>
 	</section>

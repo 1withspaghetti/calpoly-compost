@@ -30,8 +30,9 @@
 		<h2>The Mission:</h2>
 		<div class="relative px-16 py-4 md:mx-8">
 			<p class="text-center text-xl">
-				To <b class="text-2xl">educate</b> and <b class="text-2xl">advocate</b> for effective waste
-				reduction via <b class="text-2xl">composting opportunities</b> on the Cal Poly campus
+				To <b class="text-2xl">educate</b> and <b class="text-2xl">advocate</b> for
+				effective waste reduction via <b class="text-2xl">composting opportunities</b> on the
+				Cal Poly campus
 			</p>
 			<CornerLeftDown strokeWidth={3} class="absolute top-0 left-0 size-16" />
 			<CornerRightUp strokeWidth={3} class="absolute right-0 bottom-0 size-16" />

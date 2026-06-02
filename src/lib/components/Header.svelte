@@ -32,10 +32,13 @@
 		<div
 			class={[
 				'mx-auto mt-2 max-w-6xl rounded-2xl px-6 transition-all duration-300 lg:px-12',
-				isScrolled && 'max-w-4xl rounded-2xl border bg-background/50 backdrop-blur-lg lg:px-5'
+				isScrolled &&
+					'max-w-4xl rounded-2xl border bg-background/50 backdrop-blur-lg lg:px-5'
 			]}
 		>
-			<div class="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
+			<div
+				class="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4"
+			>
 				<div class="flex w-full justify-between lg:w-auto">
 					<a href={resolve('/')} aria-label="home" class="flex items-center space-x-2">
 						{GLOBAL_NAME}
@@ -47,7 +50,10 @@
 						class="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
 					>
 						<Menu
-							class={['m-auto size-6 duration-200', menuState && 'scale-0 rotate-180 opacity-0']}
+							class={[
+								'm-auto size-6 duration-200',
+								menuState && 'scale-0 rotate-180 opacity-0'
+							]}
 						/>
 						<X
 							class={[
@@ -92,7 +98,9 @@
 							{/each}
 						</ul>
 					</div>
-					<div class="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+					<div
+						class="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit"
+					>
 						<Button variant="outline" size="sm" href={resolve('/solutions')}
 							>What <i>you</i> can do</Button
 						>

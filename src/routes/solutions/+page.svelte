@@ -41,7 +41,8 @@
 				<span
 					use:inViewAnimate={{ keyframes: { opacity: [0, 1] }, options: { delay: 0.3 } }}
 					style="opacity: 0;"
-					class="mb-2 scale-x-125 text-4xl font-extrabold md:text-6xl">What can be done?</span
+					class="mb-2 scale-x-125 text-4xl font-extrabold md:text-6xl"
+					>What can be done?</span
 				>
 			</h1>
 		</div>
@@ -49,11 +50,11 @@
 	<section class="prose prose-lg w-full max-w-4xl p-8">
 		<h2 id="1">1. Composting Effort and Education</h2>
 		<p>
-			<b>The first step starts with you!</b> Before Cal Poly can start composting again, the compost
-			must not be as contaminated as before, meaning no more plastic or other items put into the
-			wrong bin. This requires an <b>active effort, research, and thought</b> put into every meal or disposal.
-			Lucky for you, we put together a tool with the most up-to-date information about the correct placement
-			of on-campus meal items.
+			<b>The first step starts with you!</b> Before Cal Poly can start composting again, the
+			compost must not be as contaminated as before, meaning no more plastic or other items
+			put into the wrong bin. This requires an <b>active effort, research, and thought</b> put into
+			every meal or disposal. Lucky for you, we put together a tool with the most up-to-date information
+			about the correct placement of on-campus meal items.
 		</p>
 		<div class="not-prose flex w-full items-center gap-4 overflow-hidden">
 			<div
@@ -73,8 +74,9 @@
 			></div>
 		</div>
 		<p>
-			If you have the means, spreading this information will make it even more effective. The Cal
-			Poly must come together to solve this issue with just a little extra effort from everyone.
+			If you have the means, spreading this information will make it even more effective. The
+			Cal Poly must come together to solve this issue with just a little extra effort from
+			everyone.
 		</p>
 		<div class="flex justify-center gap-6">
 			<Tooltip.Root>
@@ -107,7 +109,9 @@
 				<Tooltip.Trigger>
 					<Button
 						onclick={() =>
-							copyText(PUBLIC_ORIGIN).then(() => (location.href = 'https://instagram.com'))}
+							copyText(PUBLIC_ORIGIN).then(
+								() => (location.href = 'https://instagram.com')
+							)}
 						variant="ghost"
 						size="icon"
 						class="size-14"
@@ -132,8 +136,8 @@
 	<section class="prose prose-lg w-full max-w-4xl p-8">
 		<h2 id="2">2. Cal Poly’s Changes</h2>
 		<p>
-			Once the post-consumer compost is clean enough, it’s able to be one-again combined with the
-			pre-consumer compost from and <a
+			Once the post-consumer compost is clean enough, it’s able to be one-again combined with
+			the pre-consumer compost from and <a
 				href="https://afd.calpoly.edu/sustainability"
 				rel="external"
 				target="_blank">sent</a
@@ -141,9 +145,10 @@
 			to the
 			<a href="https://kompogas-slo.com/organic-waste/" rel="external" target="_blank"
 				>Hitachi-Zozen Anaerobic Digester</a
-			> to produce clean energy and compost for the community, while diverting methane-producing waste
-			from landfills. When the time is right, we must call for Cal Poly to take this action. But unfortunately,
-			this is a dichotomy where either all the compost is effectively taken care of, or none of it is.
+			> to produce clean energy and compost for the community, while diverting methane-producing
+			waste from landfills. When the time is right, we must call for Cal Poly to take this action.
+			But unfortunately, this is a dichotomy where either all the compost is effectively taken care
+			of, or none of it is.
 		</p>
 		<div class="flex flex-col items-center gap-2 md:flex-row-reverse">
 			<div
@@ -155,9 +160,10 @@
 				<Split class="mx-8 size-16 shrink-0" />
 			</div>
 			<p>
-				<i>But it doesn’t have to be that way.</i> Even starting now, we can petition Cal Poly to
-				<b>divert resources to provide on-campus or university funded sorting</b> to guarantee that all
-				the waste that can be composted, does get composted.
+				<i>But it doesn’t have to be that way.</i> Even starting now, we can petition Cal
+				Poly to
+				<b>divert resources to provide on-campus or university funded sorting</b> to guarantee
+				that all the waste that can be composted, does get composted.
 			</p>
 		</div>
 		<div class="flex flex-col items-center gap-2 md:flex-row">
@@ -171,14 +177,14 @@
 				<Banknote class="mx-8 size-16 shrink-0" />
 			</div>
 			<p>
-				There is a major drawback to this idea. Sorting waste is difficult and expensive, there is a
-				reason why compost plants <a
+				There is a major drawback to this idea. Sorting waste is difficult and expensive,
+				there is a reason why compost plants <a
 					href="https://mustangnews.net/compostingv2/"
 					rel="external"
 					target="_blank">doesn’t have the economical ability</a
-				> to do it themselves. This solution will put a band-aid on the compost wound, but healing ourselves
-				and putting the active effort in to properly sort will save money that may eventually come from
-				our tuition.
+				> to do it themselves. This solution will put a band-aid on the compost wound, but healing
+				ourselves and putting the active effort in to properly sort will save money that may eventually
+				come from our tuition.
 			</p>
 		</div>
 	</section>
@@ -205,10 +211,10 @@
 			</div>
 		</div>
 		<p>
-			Once we’ve achieved effective post-consumer composting, why stop there? Spread the ability to
-			compost to second year housing, campus market, and anywhere where food scraps or other
-			compostable waste could be disposed of. The more waste that is reused and composted, the
-			better.
+			Once we’ve achieved effective post-consumer composting, why stop there? Spread the
+			ability to compost to second year housing, campus market, and anywhere where food scraps
+			or other compostable waste could be disposed of. The more waste that is reused and
+			composted, the better.
 		</p>
 		<p>
 			This will also require a push for these services to be provided by the university, but <a
@@ -217,8 +223,10 @@
 				target="_blank">hardly an additional cost</a
 			>
 			once the system has been established. They’ve
-			<a href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=1" rel="external" target="_blank"
-				>already provided</a
+			<a
+				href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=1"
+				rel="external"
+				target="_blank">already provided</a
 			> some of these services in the past, we just need to bring them back.
 		</p>
 	</section>
