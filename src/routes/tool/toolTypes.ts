@@ -1,5 +1,3 @@
-import type { Picture } from '@sveltejs/enhanced-img';
-
 export enum SortLocation {
 	COMPOST = 0,
 	RECYCLING = 1,
@@ -8,13 +6,13 @@ export enum SortLocation {
 
 export interface Item {
 	name: string;
-	img: Picture;
+	img: string;
 	loc: SortLocation;
 	note?: string;
 }
 
 export interface ToolGroup {
 	name: string;
-	img: Picture;
+	img: string;
 	items: Record<string, Item>;
 }
