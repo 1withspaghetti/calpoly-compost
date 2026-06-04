@@ -7,120 +7,165 @@ export const imageModules = import.meta.glob(
 		eager: true,
 		query: {
 			enhanced: true,
-			w: "256",
+			w: '256'
 		}
 	}
-) as Record<string, { default: Picture }>
+) as Record<string, { default: Picture }>;
 
-export const images = Object.fromEntries(Object.entries(imageModules).map(([k, v]) => [k.replace(/^.*\/tool\//, ""), v.default]));
+export const images = Object.fromEntries(
+	Object.entries(imageModules).map(([k, v]) => [k.replace(/^.*\/tool\//, ''), v.default])
+);
 
 // Groups
 
 export const generic: ToolGroup = {
 	name: 'Generic',
-	img: "generic/thumbnail.png",
+	img: 'generic/thumbnail.png',
 	items: {
 		woodenUtensils: {
 			name: 'Wooden Utensils',
-			img: "generic/wooden_utensils.png",
+			img: 'generic/wooden_utensils.png',
 			loc: SortLocation.COMPOST
 		},
 		plasticUtensils: {
 			name: 'Plastic Utensils',
-			img: "generic/plastic_utensils.png",
+			img: 'generic/plastic_utensils.png',
 			loc: SortLocation.TRASH
 		},
 		plasticStraw: {
 			name: 'Plastic Straw',
-			img: "generic/plastic_straw.png",
+			img: 'generic/plastic_straw.png',
 			loc: SortLocation.TRASH
 		},
 		plasticLid: {
 			name: 'Plastic Lid',
-			img: "generic/plastic_lid.png",
+			img: 'generic/plastic_lid.png',
 			loc: SortLocation.TRASH,
 			note: "Can be recycled if it's Plastic #5 (Polypropylene) and cleaned out first!"
 		},
 		plasticCup: {
 			name: 'Plastic Cup',
-			img: "generic/plastic_cup.png",
+			img: 'generic/plastic_cup.png',
 			loc: SortLocation.TRASH,
 			note: "Can be recycled if it's Plastic #5 (Polypropylene) and cleaned out first! Keep lids attached."
 		},
 		paperCup: {
 			name: 'Paper Cup',
-			img: "generic/paper_cup.png",
+			img: 'generic/paper_cup.png',
 			loc: SortLocation.TRASH,
 			note: "Only commercially composable if labeled so, meaning it doesn't have an inner lining"
 		},
 		paperNapkin: {
 			name: 'Paper Napkin',
-			img: "generic/paper_napkin.png",
+			img: 'generic/paper_napkin.png',
 			loc: SortLocation.COMPOST
 		},
 		foodScraps: {
 			name: 'Food Scraps',
-			img: "generic/food_scraps.png",
+			img: 'generic/food_scraps.png',
 			loc: SortLocation.COMPOST
 		},
 		supposedlyCompostablePlastics: {
 			name: '"Compostable" plastics',
-			img: "generic/supposedly_compostable_plastics.png",
+			img: 'generic/supposedly_compostable_plastics.png',
 			loc: SortLocation.TRASH,
 			note: 'Unfortunately, these cannot be properly handed at the time'
 		},
 		paperContainer: {
 			name: 'Paper Container',
-			img: "generic/paper_container.webp",
+			img: 'generic/paper_container.webp',
 			loc: SortLocation.COMPOST,
 			note: 'Only compostable if they DO NOT have an inner lining protecting the food. All containers from Vista Grande are safe.'
 		},
 		fakePaperContainer: {
 			name: 'Paper Container With Lining',
-			img: "generic/fake_paper_container.png",
+			img: 'generic/fake_paper_container.png',
 			loc: SortLocation.TRASH,
 			note: 'Some paper containers have an inner lining, which prevents them from being composted or recycled'
 		},
 		plasticContainer: {
 			name: 'Plastic Container',
-			img: "generic/plastic_container.png",
+			img: 'generic/plastic_container.png',
 			loc: SortLocation.TRASH,
 			note: "Can be recycled if it's Plastic #5 (Polypropylene) and cleaned out first! Keep lids attached."
+		},
+		plasticBottle: {
+			name: 'Plastic Bottle',
+			img: 'generic/plastic_bottle.png',
+			loc: SortLocation.RECYCLING
+		},
+		aluminimBottle: {
+			name: 'Aluminum Bottle',
+			img: 'generic/aluminum_bottle.png',
+			loc: SortLocation.RECYCLING
+		},
+		cardboard: {
+			name: 'Cardboard',
+			img: 'generic/cardboard.png',
+			loc: SortLocation.RECYCLING
+		},
+		plasticBag: {
+			name: 'Plastic Bag',
+			img: 'generic/plastic_bag.png',
+			loc: SortLocation.TRASH
+		},
+		plasticWrapper: {
+			name: 'Plastic Wrapper',
+			img: 'generic/plastic_wrapper.webp',
+			loc: SortLocation.TRASH
 		}
 	}
 };
 
 export const chicFilA: ToolGroup = {
 	name: 'Chick-fil-A',
-	img: "chick_fil_a/thumbnail.jpg",
+	img: 'chick_fil_a/thumbnail.jpg',
 	items: {
 		bag: {
 			name: 'Paper Bag',
-			img: "chick_fil_a/bag.png",
+			img: 'chick_fil_a/bag.png',
 			loc: SortLocation.RECYCLING
 		},
 		smallBag: {
 			name: 'Small Bag',
-			img: "chick_fil_a/small_bag.png",
+			img: 'chick_fil_a/small_bag.png',
 			loc: SortLocation.TRASH,
 			note: 'The aluminum lining inside prevents it from being properly handled'
 		},
 		burgerContainer: {
 			name: 'Burger, Nugget, and Fry containers',
-			img: "chick_fil_a/burger_fly_container.png",
+			img: 'chick_fil_a/burger_fly_container.png',
 			loc: SortLocation.COMPOST,
 			note: "As long as they aren't heavily saturated with oil"
 		},
 		saucePacket: {
 			name: 'Sauce Packet',
-			img: "chick_fil_a/sauce_packet.png",
+			img: 'chick_fil_a/sauce_packet.png',
 			loc: SortLocation.TRASH
 		},
 		paperCup: generic.items.paperCup,
 		plasticLid: generic.items.plasticLid,
-		plasticStraw: generic.items.plasticStraw
+		plasticStraw: generic.items.plasticStraw,
+		foodScraps: generic.items.foodScraps
 	}
 };
 
-const toolGroups = [ generic, chicFilA ];
+export const pandaExpress: ToolGroup = {
+	name: 'Panda Express',
+	img: 'panda_express/thumbnail.webp',
+	items: {
+		plasticBag: generic.items.plasticBag,
+		plasticContainer: generic.items.plasticContainer,
+		paperContainer: generic.items.paperContainer,
+		plasticUtensils: generic.items.plasticUtensils,
+		paperNapkin: generic.items.paperNapkin,
+		plasticWrapper: generic.items.plasticWrapper,
+		paperCup: generic.items.paperCup,
+		plasticLid: generic.items.plasticLid,
+		plasticStraw: generic.items.plasticStraw,
+		foodScraps: generic.items.foodScraps
+	}
+};
+
+const toolGroups = [generic, chicFilA, pandaExpress];
 export default toolGroups;
