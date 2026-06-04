@@ -51,10 +51,11 @@
 		<h2 id="1">1. Composting Effort and Education</h2>
 		<p>
 			<b>The first step starts with you!</b> Before Cal Poly can start composting again, the
-			compost must not be as contaminated as before, meaning no more plastic or other items
-			put into the wrong bin. This requires an <b>active effort, research, and thought</b> put into
-			every meal or disposal. Lucky for you, we put together a tool with the most up-to-date information
-			about the correct placement of on-campus meal items.
+			compost must not be heavily contaminated, meaning significantly less plastic or other
+			items put into the wrong bin. This requires an
+			<b>active effort, research, and thought</b> put into every meal or disposal. Lucky for you,
+			we put together a tool with the most up-to-date information about the correct placement of
+			on-campus meal items.
 		</p>
 		<div class="not-prose flex w-full items-center gap-4 overflow-hidden">
 			<div
@@ -76,7 +77,7 @@
 		<p>
 			If you have the means, spreading this information will make it even more effective. The
 			Cal Poly must come together to solve this issue with just a little extra effort from
-			everyone.
+			everyone. This is the most important thing you can do right now.
 		</p>
 		<div class="flex justify-center gap-6">
 			<Tooltip.Root>
@@ -177,13 +178,13 @@
 				<Banknote class="mx-8 size-16 shrink-0" />
 			</div>
 			<p>
-				There is a major drawback to this idea. Sorting waste is difficult and expensive,
+				There is a major drawback to this idea. Sorting waste is difficult and expensive;
 				there is a reason why compost plants <a
 					href="https://mustangnews.net/compostingv2/"
 					rel="external"
 					target="_blank">doesn’t have the economical ability</a
-				> to do it themselves. This solution will put a band-aid on the compost wound, but healing
-				ourselves and putting the active effort in to properly sort will save money that may eventually
+				> to do it themselves. This solution will put a band-aid on the compost wound but putting
+				the active effort in to heal ourselves by properly sorting will save money that may eventually
 				come from our tuition.
 			</p>
 		</div>

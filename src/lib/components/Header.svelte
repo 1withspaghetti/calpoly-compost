@@ -1,6 +1,5 @@
 <script lang="ts">
 	/* eslint-disable svelte/no-navigation-without-resolve */
-	import Button from '$lib/components/ui/button/button.svelte';
 	import { Menu, X } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import { scrollY } from 'svelte/reactivity/window';
@@ -70,7 +69,7 @@
 							<li>
 								<a
 									href={item.href}
-									class="block text-muted-foreground duration-150 hover:text-accent-foreground"
+									class="block text-accent-foreground/60 duration-150 hover:text-accent-foreground"
 								>
 									<span>{item.name}</span>
 								</a>
@@ -90,20 +89,13 @@
 								<li>
 									<a
 										href={item.href}
-										class="block text-muted-foreground duration-150 hover:text-accent-foreground"
+										class="block text-accent-foreground/60 duration-150 hover:text-accent-foreground"
 									>
 										<span>{item.name}</span>
 									</a>
 								</li>
 							{/each}
 						</ul>
-					</div>
-					<div
-						class="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit"
-					>
-						<Button variant="outline" size="sm" href={resolve('/solutions')}
-							>What <i>you</i> can do</Button
-						>
 					</div>
 				</div>
 			</div>

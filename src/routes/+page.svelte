@@ -102,7 +102,7 @@
 					rel="external"
 					target="_blank">helps</a
 				> to save the diminishing topsoil health in the United States caused by large scale farming
-				practices.
+				practices. Healthier soil, healthier food.
 			</p>
 		</div>
 	</section>
@@ -141,7 +141,7 @@
 					Grande, but those are far from the only locations students enjoy their food.
 				</p>
 				<p>
-					Even more surprisingly, continuing students in PCV or Cerro Visto <a
+					Even more surprisingly, continuing students in PCV or Cerro Visto Apartments <a
 						href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=1"
 						rel="external"
 						target="_blank">don’t have access</a
@@ -177,13 +177,13 @@
 					The main issue? <b>Contamination</b>.
 				</p>
 				<p>
-					Contamination plagues all post-consumer composting programs; it's the same
-					reason Cal Poly <a
+					Plastic and other contaminates in the wrong bin plague all post-consumer
+					composting programs; it's the same reason Cal Poly <a
 						href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=2"
 						rel="external"
 						target="_blank">removed it’s PCV compost dumpster</a
-					> in 2023. The plastics and other waste placed into the wrong bin prevented the rest
-					of it from being properly handled, and increased cost for everybody.
+					> in 2023. Too many misplaced substances prevented the rest of it from being properly
+					handled, and increased cost for everybody.
 				</p>
 			</div>
 		</div>
