@@ -27,7 +27,7 @@
 			</h1>
 		</div>
 	</section>
-	<section class="prose prose-lg w-full max-w-4xl p-8 mb-8">
+	<section class="prose prose-lg mb-8 w-full max-w-4xl p-8">
 		<h2>The Mission:</h2>
 		<div class="relative px-16 py-4 md:mx-8">
 			<p class="text-center text-xl">
@@ -40,7 +40,7 @@
 		</div>
 	</section>
 	<section class="prose prose-lg w-full max-w-4xl p-8">
-		<div class="flex w-full items-center gap-4 overflow-hidden mb-8">
+		<div class="mb-8 flex w-full items-center gap-4 overflow-hidden">
 			<div
 				use:inViewAnimate={{
 					keyframes: { translateX: ['-100%', 0] },
@@ -57,26 +57,28 @@
 				class="h-0 w-full border"
 			></div>
 		</div>
-		<div class="flex flex-wrap justify-center gap-8 mb-8">
-			<div class="flex flex-col items-center w-64">
+		<div class="mb-8 flex flex-wrap justify-center gap-8">
+			<div class="flex w-64 flex-col items-center">
 				<Blend class="size-16" />
 				<h3 class="mt-6 mb-2">Transparency</h3>
-				<p class="text-center mt-0">
-					Promote honest and ethical communication with access to high quality sources of information
+				<p class="mt-0 text-center">
+					Promote honest and ethical communication with access to high quality sources of
+					information
 				</p>
 			</div>
-			<div class="flex flex-col items-center w-64">
+			<div class="flex w-64 flex-col items-center">
 				<Megaphone class="size-16" />
 				<h3 class="mt-6 mb-2">Advocacy</h3>
-				<p class="text-center mt-0">
-					Seeking to transform the world into a better place for everybody, one step at a time
+				<p class="mt-0 text-center">
+					Seeking to transform the world into a better place for everybody, one step at a
+					time
 				</p>
 			</div>
-			<div class="flex flex-col items-center w-64">
+			<div class="flex w-64 flex-col items-center">
 				<Scale class="size-16" />
 				<h3 class="mt-6 mb-2">Integrity</h3>
-				<p class="text-center mt-0">
-					Always do the right thing, even when nobody is watching 
+				<p class="mt-0 text-center">
+					Always do the right thing, even when nobody is watching
 				</p>
 			</div>
 		</div>
@@ -99,7 +101,7 @@
 	</section>
 	<section class="prose prose-lg w-full max-w-4xl p-8">
 		<h2>About the Author:</h2>
-		<div class="flex gap-8 items-center">
+		<div class="flex items-center gap-8">
 			<enhanced:img
 				src="$lib/assets/imgs/tyler.jpg?w=1024;512"
 				alt="tyler laying down with a mountain in the background"
@@ -108,12 +110,16 @@
 			<div class="flex-1">
 				<h3>Tyler Place</h3>
 				<p>
-					Tyler Place is a climate-driven software developer who values people and the natural world over profit. He loves making websites, petting dogs, and hiking in nature.
+					Tyler Place is a climate-driven software developer who values people and the
+					natural world over profit. He loves making websites, petting dogs, and hiking in
+					nature.
 				</p>
 			</div>
 		</div>
 	</section>
-	<section class="prose prose-lg w-full max-w-4xl p-8 mt-16">
-		<p class="text-center text-sm">This website was make for a university project as part of ENGL 147</p>
+	<section class="prose prose-lg mt-16 w-full max-w-4xl p-8">
+		<p class="text-center text-sm">
+			This website was make for a university project as part of ENGL 147
+		</p>
 	</section>
 </main>
