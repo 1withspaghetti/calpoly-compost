@@ -128,7 +128,14 @@
 				?
 			</div>
 		</div>
-		<div class="flex flex-wrap">
+		<div class="flex flex-col items-center gap-8 md:flex-row">
+			<enhanced:img
+				src="$lib/assets/imgs/where_are_the_bins.jpg?w=1024;512"
+				alt="campus marketplace with an outline of where a compost bin would be"
+				class="block max-w-64 shrink-0"
+				use:inViewAnimate={{ keyframes: { opacity: [0, 1] } }}
+				style="opacity: 0;"
+			/>
 			<div>
 				<p>
 					Ever had a meal at Campus Market? What about food trucks? You may have noticed
@@ -140,16 +147,16 @@
 					Cal Poly does contain compost bins in its two major dining areas, 1901 and Vista
 					Grande, but those are far from the only locations students enjoy their food.
 				</p>
-				<p>
-					Even more surprisingly, continuing students in PCV or Cerro Visto Apartments <a
-						href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=1"
-						rel="external"
-						target="_blank">don’t have access</a
-					> to compost either! All those eggshells, banana peels, and way more are forced straight
-					into the garbage.
-				</p>
 			</div>
 		</div>
+		<p>
+			Even more surprisingly, continuing students in PCV or Cerro Visto Apartments <a
+				href="https://www.instagram.com/p/C2A5zFPyB9l/?img_index=1"
+				rel="external"
+				target="_blank">don’t have access</a
+			> to compost either! All those eggshells, banana peels, and way more are forced straight into
+			the garbage.
+		</p>
 		<h4 class="mb-0">Cal Poly fails to live up to California's relative waste disposal:</h4>
 		<WasteStreamVisualization />
 	</section>
