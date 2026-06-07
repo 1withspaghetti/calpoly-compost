@@ -52,7 +52,7 @@
 		<p>
 			<b>The first step starts with you!</b> Before Cal Poly can start composting again, the
 			compost must not be heavily contaminated, meaning significantly less plastic or other
-			items put into the wrong bin. This requires an
+			items put into the wrong bin. This requires
 			<b>active effort, research, and thought</b> put into every meal or disposal. Lucky for you,
 			we put together a tool with the most up-to-date information about the correct placement of
 			on-campus meal items.
@@ -76,8 +76,8 @@
 		</div>
 		<p>
 			If you have the means, spreading this information will make it even more effective. The
-			Cal Poly must come together to solve this issue with just a little extra effort from
-			everyone. This is the most important thing you can do right now.
+			Cal Poly community must come together to solve this issue with just a little extra
+			effort from everyone. This is the most important thing you can do right now.
 		</p>
 		<div class="flex justify-center gap-6">
 			<Tooltip.Root>
@@ -146,10 +146,10 @@
 			to the
 			<a href="https://kompogas-slo.com/organic-waste/" rel="external" target="_blank"
 				>Hitachi-Zozen Anaerobic Digester</a
-			> to produce clean energy and compost for the community, while diverting methane-producing
-			waste from landfills. When the time is right, we must call for Cal Poly to take this action.
-			But unfortunately, this is a dichotomy where either all the compost is effectively taken care
-			of, or none of it is.
+			> where microorganisms break down biodegradable materials to produce clean energy and compost
+			for the community. All while diverting methane-producing waste from landfills. When the time
+			is right, we must call for Cal Poly to take this action. But unfortunately, this is a dichotomy
+			where either all the compost is effectively taken care of, or none of it is.
 		</p>
 		<div class="flex flex-col items-center gap-2 md:flex-row-reverse">
 			<div
@@ -161,8 +161,8 @@
 				<Split class="mx-8 size-16 shrink-0" />
 			</div>
 			<p>
-				<i>But it doesn’t have to be that way.</i> Even starting now, we can petition Cal
-				Poly to
+				<i>It doesn’t have to be that way.</i> Even starting now, we can petition Cal Poly
+				to
 				<b>divert resources to provide on-campus or university funded sorting</b> to guarantee
 				that all the waste that can be composted, does get composted.
 			</p>
@@ -178,14 +178,14 @@
 				<Banknote class="mx-8 size-16 shrink-0" />
 			</div>
 			<p>
-				There is a major drawback to this idea. Sorting waste is difficult and expensive;
-				there is a reason why compost plants <a
+				There is a major drawback to this idea. Sorting waste is difficult and expensive.
+				There is a reason why compost plants <a
 					href="https://mustangnews.net/compostingv2/"
 					rel="external"
-					target="_blank">doesn’t have the economical ability</a
-				> to do it themselves. This solution will put a band-aid on the compost wound but putting
-				the active effort in to heal ourselves by properly sorting will save money that may eventually
-				come from our tuition.
+					target="_blank">don’t have the economical ability</a
+				> to do it themselves. This solution will put a band-aid on the compost wound, but putting
+				the active effort in to heal ourselves by properly sorting is the cheapest solution. Especially
+				when additional money spent may eventually come from our tuition.
 			</p>
 		</div>
 	</section>
@@ -212,10 +212,10 @@
 			</div>
 		</div>
 		<p>
-			Once we’ve achieved effective post-consumer composting, why stop there? Spread the
-			ability to compost to second year housing, campus market, and anywhere where food scraps
-			or other compostable waste could be disposed of. The more waste that is reused and
-			composted, the better.
+			Once Cal Poly starts bringing the existing bins to compost plants, why stop there?
+			Spread the ability to compost to second year housing, campus market, and anywhere where
+			food scraps or other compostable waste could be disposed of. The more waste that is
+			reused and composted, the better.
 		</p>
 		<p>
 			This will also require a push for these services to be provided by the university, but <a

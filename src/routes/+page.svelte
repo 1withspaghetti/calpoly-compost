@@ -83,7 +83,7 @@
 					href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9575438/"
 					rel="external"
 					target="_blank">often be cheaper</a
-				> than sending waste to landfills, both for Cal Poly and hence the students.
+				> than sending waste to landfills, for Cal Poly and hence the students.
 			</p>
 		</div>
 		<div class="flex flex-col items-center gap-4 md:flex-row">
